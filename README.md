@@ -21,3 +21,7 @@ This repository is under development. For a dev install, download and type:
 ` pip install -e .`
 
 in the repository directory.
+
+This package requires these dependencies:
+    - numpy
+    - matplotlib
