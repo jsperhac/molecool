@@ -15,3 +15,9 @@ Copyright (c) 2020, jsperhac
  
 Project based on the 
 [Computational Molecular Science Python Cookiecutter](https://github.com/molssi/cookiecutter-cms) version 1.1.
+
+This repository is under development. For a dev install, download and type:
+
+` pip install -e .`
+
+in the repository directory.
