@@ -7,9 +7,11 @@ readers for pdb file formats, for molssi best practices workshop
 import numpy as np
 
 def open_pdb(file_location):
+
     # This function reads in a pdb file and returns the atom names and coordinates.
     with open(file_location) as f:
         data = f.readlines()
+
     coordinates = []
     symbols = []
     for line in data:
@@ -17,6 +19,7 @@ def open_pdb(file_location):
             symbols.append(line[76:79].strip())
             atom_coordinates = [float(x) for x in line[30:55].split()]
             coordinates.append(atom_coordinates)
+
     # Convert coordinate list to numpy array
     coordinates = np.array(coordinates)
     return symbols, coordinates
